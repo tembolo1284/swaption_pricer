@@ -1,0 +1,41 @@
+name: C++ CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Step 2: Set up CMake and Ninja
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake ninja-build g++
+
+    # Step 3: Configure the project using CMake
+    - name: Configure
+      run: |
+        cmake -B build -G Ninja
+
+    # Step 4: Build the project
+    - name: Build
+      run: |
+        cmake --build build
+
+    # Step 5: Run tests
+    - name: Run tests
+      run: |
+        ctest --output-on-failure --test-dir build
+
