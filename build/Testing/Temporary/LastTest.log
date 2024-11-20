@@ -1,0 +1,65 @@
+Start testing: Nov 19 22:13 EST
+----------------------------------------------------------
+1/1 Testing: run_tests
+1/1 Test: run_tests
+Command: "/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/build/tests/run_tests"
+Directory: /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/build/tests
+"run_tests" start time: Nov 19 22:13 EST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+[==========] Running 10 tests from 7 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from HullWhiteModelTest
+[ RUN      ] HullWhiteModelTest.SwaptionPricing
+[       OK ] HullWhiteModelTest.SwaptionPricing (0 ms)
+[----------] 1 test from HullWhiteModelTest (0 ms total)
+
+[----------] 1 test from ExtendedVasicekModelTest
+[ RUN      ] ExtendedVasicekModelTest.SwaptionPricing
+[       OK ] ExtendedVasicekModelTest.SwaptionPricing (0 ms)
+[----------] 1 test from ExtendedVasicekModelTest (0 ms total)
+
+[----------] 1 test from SABRModelTest
+[ RUN      ] SABRModelTest.SwaptionPricing
+[       OK ] SABRModelTest.SwaptionPricing (0 ms)
+[----------] 1 test from SABRModelTest (0 ms total)
+
+[----------] 2 tests from MonteCarloPricerTest
+[ RUN      ] MonteCarloPricerTest.EuropeanOptionPricing
+[       OK ] MonteCarloPricerTest.EuropeanOptionPricing (88 ms)
+[ RUN      ] MonteCarloPricerTest.AmericanOptionPricing
+[       OK ] MonteCarloPricerTest.AmericanOptionPricing (137 ms)
+[----------] 2 tests from MonteCarloPricerTest (225 ms total)
+
+[----------] 1 test from BlackModelTest
+[ RUN      ] BlackModelTest.SwaptionPricing
+[       OK ] BlackModelTest.SwaptionPricing (0 ms)
+[----------] 1 test from BlackModelTest (0 ms total)
+
+[----------] 2 tests from BinomialTreeModelTest
+[ RUN      ] BinomialTreeModelTest.AmericanOptionPricing
+[       OK ] BinomialTreeModelTest.AmericanOptionPricing (0 ms)
+[ RUN      ] BinomialTreeModelTest.EarlyExerciseCheck
+[       OK ] BinomialTreeModelTest.EarlyExerciseCheck (0 ms)
+[----------] 2 tests from BinomialTreeModelTest (0 ms total)
+
+[----------] 2 tests from FiniteDifferenceMethodTest
+[ RUN      ] FiniteDifferenceMethodTest.EuropeanOptionPricing
+[       OK ] FiniteDifferenceMethodTest.EuropeanOptionPricing (0 ms)
+[ RUN      ] FiniteDifferenceMethodTest.AmericanOptionPricing
+[       OK ] FiniteDifferenceMethodTest.AmericanOptionPricing (0 ms)
+[----------] 2 tests from FiniteDifferenceMethodTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 7 test suites ran. (226 ms total)
+[  PASSED  ] 10 tests.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"run_tests" end time: Nov 19 22:13 EST
+"run_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 19 22:13 EST

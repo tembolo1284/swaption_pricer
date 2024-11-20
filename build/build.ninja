@@ -36,76 +36,101 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/build/
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target swaption_lib
+
+
+#############################################
+# Order-only phony target for swaption_lib
+
+build cmake_object_order_depends_target_swaption_lib: phony || CMakeFiles/swaption_lib.dir
+
+build CMakeFiles/swaption_lib.dir/src/BinomialTreeModel.cpp.o: CXX_COMPILER__swaption_lib_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/BinomialTreeModel.cpp || cmake_object_order_depends_target_swaption_lib
+  DEP_FILE = CMakeFiles/swaption_lib.dir/src/BinomialTreeModel.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
+  OBJECT_DIR = CMakeFiles/swaption_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/swaption_lib.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/swaption_lib.dir/swaption_lib.pdb
+  TARGET_PDB = libswaption_lib.pdb
+
+build CMakeFiles/swaption_lib.dir/src/BlackModel.cpp.o: CXX_COMPILER__swaption_lib_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/BlackModel.cpp || cmake_object_order_depends_target_swaption_lib
+  DEP_FILE = CMakeFiles/swaption_lib.dir/src/BlackModel.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
+  OBJECT_DIR = CMakeFiles/swaption_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/swaption_lib.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/swaption_lib.dir/swaption_lib.pdb
+  TARGET_PDB = libswaption_lib.pdb
+
+build CMakeFiles/swaption_lib.dir/src/ExtendedVasicekModel.cpp.o: CXX_COMPILER__swaption_lib_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/ExtendedVasicekModel.cpp || cmake_object_order_depends_target_swaption_lib
+  DEP_FILE = CMakeFiles/swaption_lib.dir/src/ExtendedVasicekModel.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
+  OBJECT_DIR = CMakeFiles/swaption_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/swaption_lib.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/swaption_lib.dir/swaption_lib.pdb
+  TARGET_PDB = libswaption_lib.pdb
+
+build CMakeFiles/swaption_lib.dir/src/FiniteDifferenceMethod.cpp.o: CXX_COMPILER__swaption_lib_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/FiniteDifferenceMethod.cpp || cmake_object_order_depends_target_swaption_lib
+  DEP_FILE = CMakeFiles/swaption_lib.dir/src/FiniteDifferenceMethod.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
+  OBJECT_DIR = CMakeFiles/swaption_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/swaption_lib.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/swaption_lib.dir/swaption_lib.pdb
+  TARGET_PDB = libswaption_lib.pdb
+
+build CMakeFiles/swaption_lib.dir/src/HullWhiteModel.cpp.o: CXX_COMPILER__swaption_lib_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/HullWhiteModel.cpp || cmake_object_order_depends_target_swaption_lib
+  DEP_FILE = CMakeFiles/swaption_lib.dir/src/HullWhiteModel.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
+  OBJECT_DIR = CMakeFiles/swaption_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/swaption_lib.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/swaption_lib.dir/swaption_lib.pdb
+  TARGET_PDB = libswaption_lib.pdb
+
+build CMakeFiles/swaption_lib.dir/src/MonteCarloPricer.cpp.o: CXX_COMPILER__swaption_lib_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/MonteCarloPricer.cpp || cmake_object_order_depends_target_swaption_lib
+  DEP_FILE = CMakeFiles/swaption_lib.dir/src/MonteCarloPricer.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
+  OBJECT_DIR = CMakeFiles/swaption_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/swaption_lib.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/swaption_lib.dir/swaption_lib.pdb
+  TARGET_PDB = libswaption_lib.pdb
+
+build CMakeFiles/swaption_lib.dir/src/SABRModel.cpp.o: CXX_COMPILER__swaption_lib_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/SABRModel.cpp || cmake_object_order_depends_target_swaption_lib
+  DEP_FILE = CMakeFiles/swaption_lib.dir/src/SABRModel.cpp.o.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
+  OBJECT_DIR = CMakeFiles/swaption_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/swaption_lib.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/swaption_lib.dir/swaption_lib.pdb
+  TARGET_PDB = libswaption_lib.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target swaption_lib
+
+
+#############################################
+# Link the static library libswaption_lib.a
+
+build libswaption_lib.a: CXX_STATIC_LIBRARY_LINKER__swaption_lib_ CMakeFiles/swaption_lib.dir/src/BinomialTreeModel.cpp.o CMakeFiles/swaption_lib.dir/src/BlackModel.cpp.o CMakeFiles/swaption_lib.dir/src/ExtendedVasicekModel.cpp.o CMakeFiles/swaption_lib.dir/src/FiniteDifferenceMethod.cpp.o CMakeFiles/swaption_lib.dir/src/HullWhiteModel.cpp.o CMakeFiles/swaption_lib.dir/src/MonteCarloPricer.cpp.o CMakeFiles/swaption_lib.dir/src/SABRModel.cpp.o
+  OBJECT_DIR = CMakeFiles/swaption_lib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/swaption_lib.dir/swaption_lib.pdb
+  TARGET_FILE = libswaption_lib.a
+  TARGET_PDB = libswaption_lib.pdb
+
+# =============================================================================
 # Object build statements for EXECUTABLE target swaption_pricer
 
 
 #############################################
 # Order-only phony target for swaption_pricer
 
-build cmake_object_order_depends_target_swaption_pricer: phony || CMakeFiles/swaption_pricer.dir
-
-build CMakeFiles/swaption_pricer.dir/src/BinomialTreeModel.cpp.o: CXX_COMPILER__swaption_pricer_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/BinomialTreeModel.cpp || cmake_object_order_depends_target_swaption_pricer
-  DEP_FILE = CMakeFiles/swaption_pricer.dir/src/BinomialTreeModel.cpp.o.d
-  FLAGS = -Wall -Wextra -Wpedantic -O2 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
-  OBJECT_DIR = CMakeFiles/swaption_pricer.dir
-  OBJECT_FILE_DIR = CMakeFiles/swaption_pricer.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/swaption_pricer.dir/
-  TARGET_PDB = swaption_pricer.pdb
-
-build CMakeFiles/swaption_pricer.dir/src/BlackModel.cpp.o: CXX_COMPILER__swaption_pricer_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/BlackModel.cpp || cmake_object_order_depends_target_swaption_pricer
-  DEP_FILE = CMakeFiles/swaption_pricer.dir/src/BlackModel.cpp.o.d
-  FLAGS = -Wall -Wextra -Wpedantic -O2 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
-  OBJECT_DIR = CMakeFiles/swaption_pricer.dir
-  OBJECT_FILE_DIR = CMakeFiles/swaption_pricer.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/swaption_pricer.dir/
-  TARGET_PDB = swaption_pricer.pdb
-
-build CMakeFiles/swaption_pricer.dir/src/ExtendedVasicekModel.cpp.o: CXX_COMPILER__swaption_pricer_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/ExtendedVasicekModel.cpp || cmake_object_order_depends_target_swaption_pricer
-  DEP_FILE = CMakeFiles/swaption_pricer.dir/src/ExtendedVasicekModel.cpp.o.d
-  FLAGS = -Wall -Wextra -Wpedantic -O2 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
-  OBJECT_DIR = CMakeFiles/swaption_pricer.dir
-  OBJECT_FILE_DIR = CMakeFiles/swaption_pricer.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/swaption_pricer.dir/
-  TARGET_PDB = swaption_pricer.pdb
-
-build CMakeFiles/swaption_pricer.dir/src/FiniteDifferenceMethod.cpp.o: CXX_COMPILER__swaption_pricer_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/FiniteDifferenceMethod.cpp || cmake_object_order_depends_target_swaption_pricer
-  DEP_FILE = CMakeFiles/swaption_pricer.dir/src/FiniteDifferenceMethod.cpp.o.d
-  FLAGS = -Wall -Wextra -Wpedantic -O2 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
-  OBJECT_DIR = CMakeFiles/swaption_pricer.dir
-  OBJECT_FILE_DIR = CMakeFiles/swaption_pricer.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/swaption_pricer.dir/
-  TARGET_PDB = swaption_pricer.pdb
-
-build CMakeFiles/swaption_pricer.dir/src/HullWhiteModel.cpp.o: CXX_COMPILER__swaption_pricer_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/HullWhiteModel.cpp || cmake_object_order_depends_target_swaption_pricer
-  DEP_FILE = CMakeFiles/swaption_pricer.dir/src/HullWhiteModel.cpp.o.d
-  FLAGS = -Wall -Wextra -Wpedantic -O2 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
-  OBJECT_DIR = CMakeFiles/swaption_pricer.dir
-  OBJECT_FILE_DIR = CMakeFiles/swaption_pricer.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/swaption_pricer.dir/
-  TARGET_PDB = swaption_pricer.pdb
-
-build CMakeFiles/swaption_pricer.dir/src/MonteCarloPricer.cpp.o: CXX_COMPILER__swaption_pricer_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/MonteCarloPricer.cpp || cmake_object_order_depends_target_swaption_pricer
-  DEP_FILE = CMakeFiles/swaption_pricer.dir/src/MonteCarloPricer.cpp.o.d
-  FLAGS = -Wall -Wextra -Wpedantic -O2 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
-  OBJECT_DIR = CMakeFiles/swaption_pricer.dir
-  OBJECT_FILE_DIR = CMakeFiles/swaption_pricer.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/swaption_pricer.dir/
-  TARGET_PDB = swaption_pricer.pdb
-
-build CMakeFiles/swaption_pricer.dir/src/SABRModel.cpp.o: CXX_COMPILER__swaption_pricer_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/src/SABRModel.cpp || cmake_object_order_depends_target_swaption_pricer
-  DEP_FILE = CMakeFiles/swaption_pricer.dir/src/SABRModel.cpp.o.d
-  FLAGS = -Wall -Wextra -Wpedantic -O2 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/swaption_pricer/include
-  OBJECT_DIR = CMakeFiles/swaption_pricer.dir
-  OBJECT_FILE_DIR = CMakeFiles/swaption_pricer.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/swaption_pricer.dir/
-  TARGET_PDB = swaption_pricer.pdb
+build cmake_object_order_depends_target_swaption_pricer: phony || cmake_object_order_depends_target_swaption_lib
 
 build CMakeFiles/swaption_pricer.dir/main.cpp.o: CXX_COMPILER__swaption_pricer_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/main.cpp || cmake_object_order_depends_target_swaption_pricer
   DEP_FILE = CMakeFiles/swaption_pricer.dir/main.cpp.o.d
@@ -124,7 +149,8 @@ build CMakeFiles/swaption_pricer.dir/main.cpp.o: CXX_COMPILER__swaption_pricer_ 
 #############################################
 # Link the executable swaption_pricer
 
-build swaption_pricer: CXX_EXECUTABLE_LINKER__swaption_pricer_ CMakeFiles/swaption_pricer.dir/src/BinomialTreeModel.cpp.o CMakeFiles/swaption_pricer.dir/src/BlackModel.cpp.o CMakeFiles/swaption_pricer.dir/src/ExtendedVasicekModel.cpp.o CMakeFiles/swaption_pricer.dir/src/FiniteDifferenceMethod.cpp.o CMakeFiles/swaption_pricer.dir/src/HullWhiteModel.cpp.o CMakeFiles/swaption_pricer.dir/src/MonteCarloPricer.cpp.o CMakeFiles/swaption_pricer.dir/src/SABRModel.cpp.o CMakeFiles/swaption_pricer.dir/main.cpp.o
+build swaption_pricer: CXX_EXECUTABLE_LINKER__swaption_pricer_ CMakeFiles/swaption_pricer.dir/main.cpp.o | libswaption_lib.a || libswaption_lib.a
+  LINK_LIBRARIES = libswaption_lib.a
   OBJECT_DIR = CMakeFiles/swaption_pricer.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -179,7 +205,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for run_tests
 
-build cmake_object_order_depends_target_run_tests: phony || tests/CMakeFiles/run_tests.dir
+build cmake_object_order_depends_target_run_tests: phony || cmake_object_order_depends_target_swaption_lib
 
 build tests/CMakeFiles/run_tests.dir/TestModels.cpp.o: CXX_COMPILER__run_tests_ /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/tests/TestModels.cpp || cmake_object_order_depends_target_run_tests
   DEP_FILE = tests/CMakeFiles/run_tests.dir/TestModels.cpp.o.d
@@ -234,8 +260,8 @@ build tests/CMakeFiles/run_tests.dir/TestFiniteDifferenceMethod.cpp.o: CXX_COMPI
 #############################################
 # Link the executable tests/run_tests
 
-build tests/run_tests: CXX_EXECUTABLE_LINKER__run_tests_ tests/CMakeFiles/run_tests.dir/TestModels.cpp.o tests/CMakeFiles/run_tests.dir/TestMonteCarlo.cpp.o tests/CMakeFiles/run_tests.dir/TestBlackModel.cpp.o tests/CMakeFiles/run_tests.dir/TestBinomialTreeModel.cpp.o tests/CMakeFiles/run_tests.dir/TestFiniteDifferenceMethod.cpp.o | /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a
-  LINK_LIBRARIES = -lpthread  /usr/lib/x86_64-linux-gnu/libgtest_main.a  /usr/lib/x86_64-linux-gnu/libgtest.a
+build tests/run_tests: CXX_EXECUTABLE_LINKER__run_tests_ tests/CMakeFiles/run_tests.dir/TestModels.cpp.o tests/CMakeFiles/run_tests.dir/TestMonteCarlo.cpp.o tests/CMakeFiles/run_tests.dir/TestBlackModel.cpp.o tests/CMakeFiles/run_tests.dir/TestBinomialTreeModel.cpp.o tests/CMakeFiles/run_tests.dir/TestFiniteDifferenceMethod.cpp.o | libswaption_lib.a /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a || libswaption_lib.a
+  LINK_LIBRARIES = libswaption_lib.a  -lpthread  /usr/lib/x86_64-linux-gnu/libgtest_main.a  /usr/lib/x86_64-linux-gnu/libgtest.a
   OBJECT_DIR = tests/CMakeFiles/run_tests.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -283,6 +309,8 @@ build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
 
 build run_tests: phony tests/run_tests
 
+build swaption_lib: phony libswaption_lib.a
+
 # =============================================================================
 # Folder targets.
 
@@ -291,7 +319,7 @@ build run_tests: phony tests/run_tests
 #############################################
 # Folder: /home/tembolo381/Desktop/cpp-workspace/swaption_pricer/build
 
-build all: phony swaption_pricer tests/all
+build all: phony libswaption_lib.a swaption_pricer tests/all
 
 # =============================================================================
 

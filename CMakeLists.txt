@@ -13,8 +13,12 @@ include_directories(include)
 # Source files
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
+# Create a library from the source files
+add_library(swaption_lib STATIC ${SOURCES})
+
 # Main executable
-add_executable(swaption_pricer ${SOURCES} main.cpp)
+add_executable(swaption_pricer main.cpp)
+target_link_libraries(swaption_pricer PRIVATE swaption_lib)
 
 # Enable warnings and optimizations
 if(CMAKE_COMPILER_IS_GNUCXX)
@@ -27,4 +31,3 @@ find_package(GTest REQUIRED)
 # Enable testing
 enable_testing()
 add_subdirectory(tests)
-
